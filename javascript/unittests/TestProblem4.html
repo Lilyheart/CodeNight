@@ -1,0 +1,74 @@
+<html>
+
+  <body>
+
+    <script src="../problems/Problem4.js"></script>
+    <script language="javascript" type="text/javascript">
+
+      document.write("Problem4 Tests:</br></br>");
+
+      var ptDatetime = TimezoneConversion("");
+      if (ptDatetime == "") {
+        document.write("testNotADatetime1: Success");
+      } else {
+        document.write("testNotADatetime1: Failed</br>");
+        document.write(
+          "'" + ptDatetime + "' != ''");
+      }
+      document.write("</br></br>");
+
+      ptDatetime = TimezoneConversion("2016-10-31");
+      if (ptDatetime == "") {
+        document.write("testNotADatetime2: Success");
+      } else {
+        document.write("testNotADatetime2: Failed</br>");
+        document.write(
+          "'" + ptDatetime + "' != ''");
+      }
+      document.write("</br></br>");
+
+      ptDatetime = TimezoneConversion("01:00:00");
+      if (ptDatetime == "") {
+        document.write("testNullInputs3: Success");
+      } else {
+        document.write("testNullInputs3: Failed</br>");
+        document.write(
+          "'" + ptDatetime + "' != ''");
+      }
+      document.write("</br></br>");
+
+      ptDatetime = TimezoneConversion("2016-10-31 01:00:00");
+      if (ptDatetime == "2016-10-30 22:00:00") {
+        document.write("testConversion1: Success");
+      } else {
+        document.write("testConversion1: Failed</br>");
+        document.write(
+          "'" + ptDatetime + "' != '2016-10-30 22:00:00'");
+      }
+      document.write("</br></br>");
+
+      ptDatetime = TimezoneConversion("2016-10-31 03:00:00");
+      if (ptDatetime == "2016-10-31 00:00:00") {
+        document.write("testConversion2: Success");
+      } else {
+        document.write("testConversion2: Failed</br>");
+        document.write(
+          "'" + ptDatetime + "' != '2016-10-31 00:00:00'");
+      }
+      document.write("</br></br>");
+
+      ptDatetime = TimezoneConversion("2017-01-01 20:24:36");
+      if (ptDatetime == "2017-01-01 23:24:36") {
+        document.write("testConversion3: Success");
+      } else {
+        document.write("testConversion3: Failed</br>");
+        document.write(
+          "'" + ptDatetime + "' != '2017-01-01 23:24:36'");
+      }
+      document.write("</br></br>");
+
+    </script>
+
+  </body>
+
+</html>
