@@ -16,7 +16,6 @@ from problems.problem_2 import sean_bean_survival_and_deaths
 class TestProblem2(unittest.TestCase):
 
     def test_survival(self):
-
         returned_survival_movies, returned_death_movies =\
             sean_bean_survival_and_deaths()
 
@@ -30,7 +29,6 @@ class TestProblem2(unittest.TestCase):
             expected_survivial_movies)
 
     def test_death(self):
-
         returned_survival_movies, returned_death_movies =\
             sean_bean_survival_and_deaths()
 
