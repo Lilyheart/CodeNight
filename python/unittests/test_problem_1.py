@@ -30,7 +30,6 @@ class TestProblem1(unittest.TestCase):
             "Here's looking at you, kid.")
 
     def test_string_more(self):
-
         self.assertEqual(
             walken_simulator("Frankly, my dear, I don't give a damn"),
             "Frankly, my dear, I don't. Give a damn.")
