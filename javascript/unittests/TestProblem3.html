@@ -1,0 +1,84 @@
+<html>
+
+  <body>
+
+    <script src="../problems/Problem3.js"></script>
+    <script language="javascript" type="text/javascript">
+
+      document.write("Problem3 Tests:</br></br>");
+
+      var keyPresses = PhoneTextConversion("");
+      if (keyPresses == "") {
+        document.write("testEmptyInput: Success");
+      } else {
+        document.write("testEmptyInput: Failed</br>");
+        document.write(
+          "'" + keyPresses + "' != ''");
+      }
+      document.write("</br></br>");
+
+      keyPresses = PhoneTextConversion("omg");
+      if (keyPresses == "666_6_4") {
+        document.write("testEmptyInput: Success");
+      } else {
+        document.write("testEmptyInput: Failed</br>");
+        document.write(
+          "'" + keyPresses + "' != '666_6_4'");
+      }
+      document.write("</br></br>");
+
+      keyPresses = PhoneTextConversion("inbd");
+      if (keyPresses == "444_66_22_3") {
+        document.write("testEmptyInput: Success");
+      } else {
+        document.write("testEmptyInput: Failed</br>");
+        document.write(
+          "'" + keyPresses + "' != '444_66_22_3'");
+      }
+      document.write("</br></br>");
+
+      keyPresses = PhoneTextConversion("idkmybffjill");
+      if (keyPresses == "444_3_55_6_999_22_333_333_5_444_555_555") {
+        document.write("testEmptyInput: Success");
+      } else {
+        document.write("testEmptyInput: Failed</br>");
+        document.write(
+          "'" + keyPresses + "' != '444_3_55_6_999_22_333_333_5_444_555_555'");
+      }
+      document.write("</br></br>");
+
+      keyPresses = PhoneTextConversion("tisnf");
+      if (keyPresses == "666_6_4") {
+        document.write("testEmptyInput: Success");
+      } else {
+        document.write("testEmptyInput: Failed</br>");
+        document.write(
+          "'" + keyPresses + "' != '666_6_4'");
+      }
+      document.write("</br></br>");
+
+      keyPresses = PhoneTextConversion("n00b");
+      if (keyPresses == "66_0_0_22") {
+        document.write("testEmptyInput: Success");
+      } else {
+        document.write("testEmptyInput: Failed</br>");
+        document.write(
+          "'" + keyPresses + "' != '66_0_0_22'");
+      }
+      document.write("</br></br>");
+
+      keyPresses = PhoneTextConversion("hello world!");
+      if (keyPresses == "44_33_555_555_666_*_9_666_777_555_3_111") {
+        document.write("testEmptyInput: Success");
+      } else {
+        document.write("testEmptyInput: Failed</br>");
+        document.write(
+          "'" + keyPresses + "' != '44_33_555_555_666_*_9_666_777_555_3_111'");
+      }
+      document.write("</br></br>");
+
+    </script>
+
+  </body>
+
+</html>
