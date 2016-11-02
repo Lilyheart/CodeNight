@@ -5,6 +5,7 @@
     Sean Bean doesn't always die...
 
     (But he usually does: https://www.youtube.com/watch?v=zEhtsgu6bJg)
+    (Seriously... http://geektyrant.com/news/infographic-the-many-deaths-of-sean-bean)
 
     Return a list of movie titles in which Sean bean does
     and does not die, sorted from the year that they came out
