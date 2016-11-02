@@ -1,0 +1,55 @@
+<html>
+
+  <body>
+
+    <script src="../problems/Problem5.js"></script>
+    <script language="javascript" type="text/javascript">
+
+      document.write("Problem5 Tests:</br></br>");
+
+      var textInBananaStand = GetWhatsInBananaStand("stand only");
+      if (textInBananaStand == "No Money!") {
+        document.write("testNoBanana: Success");
+      } else {
+        document.write("testNoBanana: Failed</br>");
+        document.write(
+          "'" + textInBananaStand + "' != 'No Money!'");
+      }
+      document.write("</br></br>");
+
+      textInBananaStand = GetWhatsInBananaStand("banana only");
+      if (textInBananaStand == "No Money!") {
+        document.write("testNoStand: Success");
+      } else {
+        document.write("testNoStand: Failed</br>");
+        document.write(
+          "'" + textInBananaStand + "' != 'No Money!'");
+      }
+      document.write("</br></br>");
+
+      textInBananaStand =
+        GetWhatsInBananaStand("I like bananas, where do you stand on the issue?");
+      if (textInBananaStand == "s, where do you ") {
+        document.write("testInsideBananaStand: Success");
+      } else {
+        document.write("testInsideBananaStand: Failed</br>");
+        document.write(
+          "'" + textInBananaStand + "' != 's, where do you '");
+      }
+      document.write("</br></br>");
+
+      textInBananaStand = GetWhatsInBananaStand("banana money stand");
+      if (textInBananaStand == "No Money!") {
+        document.write("testInsideBananaStand: Success");
+      } else {
+        document.write("testInsideBananaStand: Failed</br>");
+        document.write(
+          "'" + textInBananaStand + "' != ' money '");
+      }
+      document.write("</br></br>");
+
+    </script>
+
+  </body>
+
+</html>
