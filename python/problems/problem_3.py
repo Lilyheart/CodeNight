@@ -51,4 +51,6 @@ def phone_text_conversion(text):
 
     key_presses = ''
 
+    # Determine Key Presses Here
+
     return key_presses
