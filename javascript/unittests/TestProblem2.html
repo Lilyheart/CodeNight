@@ -1,0 +1,44 @@
+<html>
+
+  <body>
+
+    <script src="../problems/Problem2.js"></script>
+    <script language="javascript" type="text/javascript">
+
+      document.write("Problem2 Tests:</br></br>");
+
+      var seanBeanMovieBreakdown = SeanBeanSurvivalAndDeaths();
+      var expectedDeaths = [
+        "Patriot Games",
+        "Golden Eye",
+        "The Load of the Rings: Fellowship of the Ring",
+      ]
+      if (seanBeanMovieBreakdown.death == expectedDeaths) {
+        document.write("testDeaths: Success");
+      } else {
+        document.write("testDeaths: Failed</br>");
+        document.write(
+          "[" + seanBeanMovieBreakdown.death + "] != [" + expectedDeaths + "]");
+      }
+      document.write("</br></br>");
+
+
+      var expectedSurivals = [
+        "National Treasure",
+        "Silent Hill",
+        "The Martian",
+      ]
+      if (seanBeanMovieBreakdown.survival == expectedDeaths) {
+        document.write("testSurvivals: Success");
+      } else {
+        document.write("testSurvivals: Failed</br>");
+        document.write(
+          "[" + seanBeanMovieBreakdown.survival + "] != [" + expectedSurivals + "]");
+      }
+      document.write("</br></br>");
+
+    </script>
+
+  </body>
+
+</html>
