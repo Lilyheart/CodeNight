@@ -1,0 +1,82 @@
+<html>
+
+  <body>
+
+    <script src="../problems/Problem1.js"></script>
+    <script language="javascript" type="text/javascript">
+
+      document.write("Problem1 Tests:</br></br>");
+
+      var walkenQuote = WalkenSimulator("");
+      if (walkenQuote == "More Cowbell!") {
+        document.write("testNullInputs: Success");
+      } else {
+        document.write("testNullInputs: Failed</br>");
+        document.write(
+          "'" + walkenQuote + "' != 'More Cowbell!'");
+      }
+      document.write("</br></br>");
+
+      walkenQuote = WalkenSimulator("I drink your milkshake");
+      if (walkenQuote == "I drink your milkshake.") {
+        document.write("testStringLessFive: Success");
+      } else {
+        document.write("testStringLessFive: Failed</br>");
+        document.write(
+          "'" + walkenQuote +
+          "' != 'I drink your milkshake.'");
+      }
+      document.write("</br></br>");
+
+      walkenQuote = WalkenSimulator("Here's looking at you, kid");
+      if (walkenQuote == "Here's looking at you, kid.") {
+        document.write("testStringFive: Success");
+      } else {
+        document.write("testStringFive: Failed</br>");
+        document.write(
+          "'" + walkenQuote +
+          "' != 'Here's looking at you, kid.'");
+      }
+      document.write("</br></br>");
+
+      walkenQuote = WalkenSimulator(
+        "Frankly, my dear, I don't give a damn");
+      if (walkenQuote == "Frankly, my dear, I don't. Give a damn.") {
+        document.write("testStringMore: Success");
+      } else {
+        document.write("testStringMore: Failed</br>");
+        document.write(
+          "'" + walkenQuote +
+          "' != 'Frankly, my dear, I don't. Give a damn.'");
+      }
+      document.write("</br></br>");
+
+      walkenQuote = WalkenSimulator(
+        "Roads? Where we're going we don't need roads");
+      if (walkenQuote == "Roads? Where we're going we. Don't need roads.") {
+        document.write("testStringMore: Success");
+      } else {
+        document.write("testStringMore: Failed</br>");
+        document.write(
+          "'" + walkenQuote +
+          "' != 'Roads? Where we're going we. Don't need roads.'");
+      }
+      document.write("</br></br>");
+
+      walkenQuote = WalkenSimulator(
+        "Don't mess with the bull young man. You'll get the horns");
+      if (walkenQuote == "Don't mess with the bull. Young man. You'll get the. Horns.") {
+        document.write("testStringMore: Success");
+      } else {
+        document.write("testStringMore: Failed</br>");
+        document.write(
+          "'" + walkenQuote +
+          "' != 'Don't mess with the bull. Young man. You'll get the. Horns.'");
+      }
+      document.write("</br></br>");
+
+    </script>
+
+  </body>
+
+</html>
