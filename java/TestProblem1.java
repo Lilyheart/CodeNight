@@ -52,7 +52,7 @@ class TestProblem1 {
     System.out.printf("Problem1 Tests:\n\n");
 
     String walken_quote = problem.walken_simulator("");
-    if (walken_quote == "More Cowbell!") {
+      if (walken_quote.equals("More Cowbell!")) {
       System.out.println("testNullInputs: Success");
     } else {
       System.out.println("testNullInputs: Failure");
@@ -62,7 +62,7 @@ class TestProblem1 {
 
     walken_quote = problem.walken_simulator(
         "I drink your milkshake");
-    if (walken_quote == "I drink your milkshake.") {
+    if (walken_quote.equals("I drink your milkshake.")) {
       System.out.println("testStringLessFive: Success");
     } else {
       System.out.println("testStringLessFive: Failure");
@@ -73,7 +73,7 @@ class TestProblem1 {
 
     walken_quote = problem.walken_simulator(
         "Here's looking at you, kid");
-    if (walken_quote == "Here's looking at you, kid.") {
+    if (walken_quote.equals("Here's looking at you, kid.")) {
       System.out.println("testStringFive: Success");
     } else {
       System.out.println("testStringFive: Failure");
@@ -84,7 +84,7 @@ class TestProblem1 {
 
     walken_quote = problem.walken_simulator(
         "Frankly, my dear, I don't give a damn");
-    if (walken_quote == "Frankly, my dear, I don't. Give a damn.") {
+    if (walken_quote.equals("Frankly, my dear, I don't. Give a damn.")) {
       System.out.println("testStringMore1: Success");
     } else {
       System.out.println("testStringMore1: Failure");
@@ -95,7 +95,7 @@ class TestProblem1 {
 
     walken_quote = problem.walken_simulator(
         "Roads? Where we're going we don't need roads");
-    if (walken_quote == "Roads? Where we're going we. Don't need roads.") {
+    if (walken_quote.equals("Roads? Where we're going we. Don't need roads.")) {
       System.out.println("testStringMore2: Success");
     } else {
       System.out.println("testStringMore2: Failure");
@@ -106,7 +106,7 @@ class TestProblem1 {
 
     walken_quote = problem.walken_simulator(
         "Don't mess with the bull young man. You'll get the horns");
-    if (walken_quote == "Don't mess with the bull. Young man. You'll get the. Horns.") {
+    if (walken_quote.equals("Don't mess with the bull. Young man. You'll get the. Horns.")) {
       System.out.println("testStringMore3: Success");
     } else {
       System.out.println("testStringMore3: Failure");
